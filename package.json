@@ -1,0 +1,24 @@
+{
+  "name": "my-cli",
+  "version": "1.0.0",
+  "description": "- 实现在命令行中可以直接运行代码 - my-cli install - my-cli config",
+  "main": "index.js",
+  "bin": {
+    "my-cli": "./bin/www"
+  },
+  "scripts": {
+    "compile": "babel src -d dist",
+    "watch": "npm run compile -- --watch"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@babel/cli": "^7.1.5",
+    "@babel/core": "^7.1.6",
+    "@babel/preset-env": "^7.1.6"
+  },
+  "dependencies": {
+    "commander": "^2.19.0"
+  }
+}
